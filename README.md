@@ -11,4 +11,4 @@ in this project; There is a registration page and a login page. After the login 
 
 # project purpose
 
-intended to perform these functions. login page, register page, database, create-update-delete post, change profil picture, update-delete profil settings. 
+intended to perform these functions. login page, register page, database, create-update-delete post, change profil picture, update-delete profil settings. I used rest api and context api.
