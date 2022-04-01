@@ -5,7 +5,7 @@ const Post = require("../models/Post");
 //+CREATE POST
 
 router.post("/", async (req,res) => {
-    const newPost = new Post (req.body); //TRY FONKSİYONUNDA DENE !!
+    const newPost = new Post (req.body); 
     try{
         const savedPost = await newPost.save();
         res.status(200).json(savedPost)
@@ -82,7 +82,7 @@ router.get("/", async(req,res)=>{
                 $in:[catName],
             }})
         }else {
-            posts = await Post.find(); // kategori ismi username yoksa bütün postu getir.
+            posts = await Post.find(); 
         }
         res.status(200).json(posts)
     }catch(err){
